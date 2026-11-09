@@ -7,7 +7,7 @@
 // between the quotes below. Until then, the form opens an email
 // to Patrick instead, so no message is ever lost.
 // -------------------------------------------------------------
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/xaeegbqa";
 const FALLBACK_EMAIL = "patrick@journey2change.com";
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,15 @@
+// Cloudflare settings for the journey2change website.
+// The whole folder is published as a plain static website.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "j2c-test",
+  "compatibility_date": "2026-11-04",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    // Show our own 404.html when someone opens a page that doesn't exist.
+    "not_found_handling": "404-page"
+  }
+}

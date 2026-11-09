@@ -4,6 +4,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "j2c-test",
   "compatibility_date": "2026-11-04",
+  // The website's real addresses. Cloudflare creates the matching
+  // settings and the security certificate (padlock) for these itself.
+  "routes": [
+    { "pattern": "www.journey2change.com", "custom_domain": true },
+    { "pattern": "journey2change.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   },
